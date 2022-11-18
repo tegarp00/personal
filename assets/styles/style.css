@@ -11,6 +11,10 @@
     margin-left: 35px;
 }
 
+.kol-3 {
+    width: calc(100% / 3);
+}
+
 /*
 nav ul li a {
     font-family: 'Fira Code';
