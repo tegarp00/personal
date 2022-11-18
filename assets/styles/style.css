@@ -5,16 +5,19 @@
 @tailwind utilities;
 
 
+.contr {
+    padding-right: 179px;
+    padding-left: 179px;
+    margin-left: 35px;
+}
+
+/*
 nav ul li a {
     font-family: 'Fira Code';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
-    /* identical to box height */
-
-
-    /* gray */
 
     color: #ABB2BF;
 }
@@ -38,3 +41,4 @@ nav {
 
     color: #C778DD;
 }
+*/

@@ -10,76 +10,107 @@
 </head>
 <body class="bg-[#282C33]">
 
+<section id="header">
+
+	<nav class="py-4 lg:px-2 px-4 bg-[#282C33] dark:bg-gray-900 dark:border-gray-700">
+
+		<div class="lg:px-[171px] lg:py-8 lg:mb-[62px] container flex flex-wrap items-center justify-between mx-auto">
+		<a href="#" class="flex items-center">
+			<img src="assets/images/icons/Union.svg" class="h-[16px] mr-3 sm:h-[16px]" alt="Flowbite Logo" />
+			<span class="self-center text-base text-white font-bold whitespace-nowrap dark:text-white">tegarp00</span>
+		</a>
+		<button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-orange-900 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
+			<svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+		</button>
+		<div class="lg:flex hidden w-full md:block md:w-auto" id="navbar-multi-level">
+			<div class="lg:mt-[-35px] lg:absolute lg:left-12 lg:top-0 lg:mb-[14px] h-0">
+				<img class="lg:mb-[14px] lg:visible invisible" src="/assets/images/icons/Line 10 (Stroke).svg" alt="">
+				<div class="justify-center lg:mt-0 mt-[-40px] lg:ml-[-9px] flex lg:flex-col flex-row">
+					<img class="w-5 lg:mb-[19px]" src="/assets/images/icons/github.svg" alt="">
+					<img class="w-5 lg:mb-[19px] lg:ml-0 ml-4" src="/assets/images/icons/drible.svg" alt="">
+					<img class="w-5 lg:mb-[19px] lg:ml-0 ml-4" src="/assets/images/icons/figma.svg" alt="">
+				</div>
+			</div>
+			<ul class="flex lg:ml-0 ml-5 p-4 mt-4 rounded-lg md:space-x-8 md:mt-0 md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+			<li class="lg:flex lg:flex-row flex-col lg:items-center">
+				<a href="#" class="lg:inline block tagar font-medium text-base  text-white rounded md:bg-transparent dark:bg-blue-600 md:dark:bg-transparent" aria-current="page"><span class="mr-[2px]">#</span>home</a>
+				<a href="#" class="lg:inline block tagar font-medium text-base text-[#ABB2BF] rounded md:bg-transparent  dark:bg-blue-600 md:dark:bg-transparent" aria-current="page"><span class="mr-[2px] lg:ml-8">#</span>works</a>
+				<a href="#" class="lg:inline block tagar font-medium text-base text-[#ABB2BF] rounded md:bg-transparent dark:bg-blue-600 md:dark:bg-transparent" aria-current="page"><span class="mr-[2px] lg:ml-8">#</span>about-me</a>
+				<a href="#" class="lg:inline block tagar font-medium text-base text-[#ABB2BF] rounded md:bg-transparent dark:bg-blue-600 md:dark:bg-transparent" aria-current="page"><span class="mr-[2px] lg:ml-8">#</span>contacts</a>
+				<button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="lg:visible invisible ml-[32px] flex items-center w-full font-medium text-[#ABB2BF] border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:w-auto">EN <svg class="w-4 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+			</li>
+			<li>
+				<!-- Dropdown menu -->
+				<div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+					<ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+						<li>
+						<a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+						</li>
+						<li aria-labelledby="dropdownNavbarLink">
+						<button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dropdown<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></button>
+						<div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+							<ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+								<li>
+								<a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Overview</a>
+								</li>
+								<li>
+								<a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">My downloads</a>
+								</li>
+								<li>
+								<a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Billing</a>
+								</li>
+								<li>
+								<a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Rewards</a>
+								</li>
+							</ul>
+						</div>
+						</li>
+						<li>
+						<a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+						</li>
+					</ul>
+					<div class="py-1">
+						<a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
+					</div>
+				</div>
+			</li>
+			</ul>
+		</div>
+		</div>
+	</nav>
+
+</section>
 
 
-<nav class="py-4 lg:px-2 px-4 bg-[#282C33] dark:bg-gray-900 dark:border-gray-700">
-
-	<div class="lg:px-[171px] lg:py-8 container flex flex-wrap items-center justify-between mx-auto">
-	  <a href="#" class="flex items-center">
-		  <img src="assets/images/icons/Union.svg" class="h-[16px] mr-3 sm:h-[16px]" alt="Flowbite Logo" />
-		  <span class="self-center text-base font-bold whitespace-nowrap dark:text-white">tegarp00</span>
-	  </a>
-	  <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-orange-900 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
-		<svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-	  </button>
-	  <div class="lg:flex hidden w-full md:block md:w-auto" id="navbar-multi-level">
-	<div class="lg:mt-[-35px] lg:absolute lg:left-12 lg:top-0 lg:mb-[14px] h-0">
-		<img class="lg:mb-[14px] lg:visible invisible" src="/assets/images/icons/Line 10 (Stroke).svg" alt="">
-		<div class="lg:ml-[-9px] flex lg:flex-col flex-row">
-			<img class="w-5 lg:mb-[19px]" src="/assets/images/icons/github.svg" alt="">
-			<img class="w-5 lg:mb-[19px]" src="/assets/images/icons/drible.svg" alt="">
-			<img class="w-5 lg:mb-[19px]" src="/assets/images/icons/figma.svg" alt="">
+<section id="home" class="">
+	<div class="contr flex">
+		<div class="">
+			<h1 class="lg:mb-[32px] text-white font-semibold text-[32px] w-[590px]">tegarp00 is a <span class="text-[#C778DD]">web designer</span> and <span class="text-[#C778DD]">backEnd developer</span></h1>
+			<p class="text-[#ABB2BF] w-[462px] mb-[32px]">
+				He crafts responsive website where technologies meet creativity
+			</p>
+			<a href="#" class="text-white border border-[#C778DD] py-2 px-4">Contact me !!</a>
+		</div>
+		<div class="">
+			<img class="mt-[-62px]" src="/assets/images/Home-profile.png" alt="">
+			<div class="mb-[112px] flex items-center border border-[#ABB2BF] py-2 px-2 ml-[20px] w-[334px]">
+				<div class="w-4 h-4 mr-[10px] bg-[#C778DD]"></div>
+				<p class="text-[#ABB2BF] text-[13px] font-normal">Currently working on <span class="text-white font-semibold">Portofolio</span></p>
+			</div>
 		</div>
 	</div>
-		<ul class="flex lg:ml-0 ml-5 p-4 mt-4 rounded-lg md:space-x-8 md:mt-0 md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-		  <li class="lg:flex lg:flex-row flex-col lg:items-center">
-			<a href="#" class="lg:inline block tagar font-medium text-base  text-white rounded md:bg-transparent dark:bg-blue-600 md:dark:bg-transparent" aria-current="page"><span class="mr-[2px]">#</span>home</a>
-			<a href="#" class="lg:inline block tagar font-medium text-base text-[#ABB2BF] rounded md:bg-transparent  dark:bg-blue-600 md:dark:bg-transparent" aria-current="page"><span class="mr-[2px] lg:ml-8">#</span>works</a>
-			<a href="#" class="lg:inline block tagar font-medium text-base text-[#ABB2BF] rounded md:bg-transparent dark:bg-blue-600 md:dark:bg-transparent" aria-current="page"><span class="mr-[2px] lg:ml-8">#</span>about-me</a>
-			<a href="#" class="lg:inline block tagar font-medium text-base text-[#ABB2BF] rounded md:bg-transparent dark:bg-blue-600 md:dark:bg-transparent" aria-current="page"><span class="mr-[2px] lg:ml-8">#</span>contacts</a>
-			<button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="lg:visible invisible ml-[32px] flex items-center w-full font-medium text-[#ABB2BF] border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:w-auto">EN <svg class="w-4 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
-		  </li>
-		  <li>
-			  <!-- Dropdown menu -->
-			  <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-				  <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-					<li>
-					  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-					</li>
-					<li aria-labelledby="dropdownNavbarLink">
-					  <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dropdown<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></button>
-					  <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
-						  <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
-							<li>
-							  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Overview</a>
-							</li>
-							<li>
-							  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">My downloads</a>
-							</li>
-							<li>
-							  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Billing</a>
-							</li>
-							<li>
-							  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Rewards</a>
-							</li>
-						  </ul>
-					  </div>
-					</li>
-					<li>
-					  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-					</li>
-				  </ul>
-				  <div class="py-1">
-					<a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
-				  </div>
-			  </div>
-		  </li>
-		</ul>
-	  </div>
+	<div class="mx-auto relative flex justify-center  border border-[#ABB2BF] w-[712px] py-8 px-8">
+		<img class="absolute top-[-12px] left-[8px] bg-[#282C33] px-2" src="/assets/images/petik-dua.png" alt="">
+		<p class="text-white text-center font-medium text-[18px]">With great power comes great electricity bill</p>
 	</div>
-  </nav>
-
-
+	<div class="ml-[852px] relative">
+		<div class="relative flex border border-t-0 border-[#ABB2BF] w-[180px] py-8 px-8">
+			<img class="absolute top-[-12px] right-[8px] bg-[#282C33] px-2" src="/assets/images/petik-dua.png" alt="">
+			<p class="text-white text-center font-medium text-[18px]">- Dr. Who</p>
+		</div>
+		<div class="absolute left-[408px] top-[-65px] w-[91px] h-[91px] bg-[#282C33] border border-[#ABB2BF] mr-[-350px]"></div>
+	</div>
+</section>
 
 
 

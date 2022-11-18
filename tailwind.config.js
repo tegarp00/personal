@@ -7,9 +7,11 @@ module.exports = {
   theme: {
     extend: {
 		fontFamily: {
-			body: [
-        'Fira Code'
-      ]
+      'sans': ['Fira Code'],
+      'serif': ['Fira Code'],
+      'mono': ['Fira Code'],
+      'display': ['Fira Code'],
+      'body': ['Fira Code']
 		}
 	},
   },
