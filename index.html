@@ -28,7 +28,7 @@
 				<div class="justify-center lg:mt-0 mt-[-40px] lg:ml-[-9px] flex lg:flex-col flex-row">
 					<img class="w-5 lg:mb-[19px]" src="/assets/images/icons/github.svg" alt="">
 					<img class="w-5 lg:mb-[19px] lg:ml-0 ml-4" src="/assets/images/icons/drible.svg" alt="">
-					<img class="w-5 lg:mb-[19px] lg:ml-0 ml-4" src="/assets/images/icons/figma.svg" alt="">
+					<img class="w-[12px] lg:mb-[19px] lg:ml-0 ml-4" src="/assets/images/icons/figma.svg" alt="">
 				</div>
 			</div>
 			<ul class="flex lg:ml-0 ml-5 p-4 mt-4 rounded-lg md:space-x-8 md:mt-0 md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
@@ -83,15 +83,15 @@
 
 
 <section id="home" class="">
-	<div class="contr flex">
+	<div class="lg:pl-[179px] flex lg:flex-row flex-col lg:pt-0 pt-[15px]">
 		<div class="">
-			<h1 class="lg:mb-[32px] text-white font-semibold text-[32px] w-[590px]">tegarp00 is a <span class="text-[#C778DD]">web designer</span> and <span class="text-[#C778DD]">backEnd developer</span></h1>
-			<p class="text-[#ABB2BF] w-[462px] mb-[32px]">
+			<h1 class="lg:mb-[32px] text-white font-semibold lg:ml-0 ml-[20px] lg:text-[32px] text-[18px] lg:w-[590px] w-[300px]">tegarp00 is a <span class="text-[#C778DD]">web designer</span> and <span class="text-[#C778DD]">backEnd developer</span></h1>
+			<p class="text-[#ABB2BF] lg:w-[462px] w-[350px] lg:ml-0 ml-[20px] mb-[32px]">
 				He crafts responsive website where technologies meet creativity
 			</p>
-			<a href="#" class="text-white border border-[#C778DD] py-2 px-4">Contact me !!</a>
+			<a href="#" class="text-white border border-[#C778DD] py-2 px-4 lg:ml-0 ml-[20px]">Contact me !!</a>
 		</div>
-		<div class="">
+		<div class="lg:mt-0 mt-[90px] lg:px-0 px-4">
 			<img class="mt-[-62px]" src="/assets/images/Home-profile.png" alt="">
 			<div class="mb-[112px] flex items-center border border-[#ABB2BF] py-2 px-2 ml-[20px] w-[334px]">
 				<div class="w-4 h-4 mr-[10px] bg-[#C778DD]"></div>
@@ -101,29 +101,33 @@
 	</div>
 </section>
 
-<section>
-	<div class="mx-auto relative flex justify-center  border border-[#ABB2BF] w-[712px] py-8 px-8">
+<section id="quotes">
+	<div class="mx-auto relative flex justify-center  border border-[#ABB2BF] lg:w-[712px] w-[330px] py-8 px-8">
 		<img class="absolute top-[-12px] left-[8px] bg-[#282C33] px-2" src="/assets/images/petik-dua.png" alt="">
 		<p class="text-white text-center font-medium text-[18px]">With great power comes great electricity bill</p>
 	</div>
-	<div class="ml-[852px] mb-[74px] relative">
+	<div class="lg:ml-[852px] ml-[180px] mb-[74px] relative">
 		<div class="relative flex border border-t-0 border-[#ABB2BF] w-[180px] py-8 px-8">
 			<img class="absolute top-[-12px] right-[8px] bg-[#282C33] px-2" src="/assets/images/petik-dua.png" alt="">
 			<p class="text-white text-center font-medium text-[18px]">- Dr. Who</p>
 		</div>
-		<div class="absolute left-[408px] top-[-65px] w-[91px] h-[91px] bg-[#282C33] border border-[#ABB2BF] mr-[-350px]"></div>
+		<div class="absolute lg:left-[408px] left-[200px] top-[-65px] lg:w-[91px] w-[8px] h-[91px] bg-[#282C33] border border-r-0 border-[#ABB2BF] mr-[-350px]"></div>
 	</div>
 </section>
 
 
 <section id="projects" class="mb-[100px]">
-	<div class="contr flex items-center mb-12">
-		<h1 class="text-white font-medium text-[32px] mr-4"><span class="text-[#C778DD]">#</span>projects</h1>
-		<hr class="border border-[#C778DD] w-[511px] mr-[142px]">
-		<p class="font-medium text-base text-white">View all ~~></p>
+	<div class="contr">
+
+	<div class="flex items-center mb-12">
+		 	<div class="flex items-center">
+			 <h1 class="text-white font-medium text-[32px] mr-4 lg:ml-[-4px] ml-[-180px]"><span class="text-[#C778DD]">#</span>projects</h1>
+			 <hr class="lg:visible invisible border border-[#C778DD] lg:w-[511px] w-0 lg:mr-[142px] mr-[30px]">
+			 <p class="font-medium text-base text-white w-[150px]">Value all ~~></p>
+			</div>
 	</div>
-	<div class="flex justify-center gap-4 mb-[131px]">
-		<div class="">
+	<div class="flex justify-center gap-4 mb-[131px] overflow-x-scroll lg:w-auto w-[300px]">
+		<div>
 			<img class="border border-[#ABB2BF]" src="/assets/images/chartnodes.png" alt="">
 			<p class="py-2 pl-2 border border-t-0 border-b-0 w-[328px] text-[#ABB2BF] border-[#ABB2BF]"><span>HTML</span><span class="ml-2">SCSS</span><span class="ml-2">Python</span><span class="ml-2">Flask</span></p>
 			<div class="border border-[#ABB2BF] w-[328px]">
@@ -165,35 +169,47 @@
 					<p class="py-[8px] px-4 border border-[#C778DD] w-[112px] text-base text-white">Live <~></p>
 				</div>
 			</div>
-
 		</div>
+
+		<div class="">
+			<img class="border border-[#ABB2BF]" src="assets/images/kahoot.png" alt="">
+			<p class="py-2 pl-2 border border-t-0 border-b-0 w-[323px] text-[#ABB2BF] border-[#ABB2BF]"><span>CSS</span><span class="ml-2">Express</span><span class="ml-2">Node.js</span>
+			<div class="border border-[#ABB2BF] w-[323px]">
+				<p class="text-white text-2xl font-medium mt-[16px] ml-[16px] mb-4">Kahoot Answers<br>Viewer</p>
+				<p class="ml-[16px] text-[#ABB2BF] text-base mb-4">Get answers to your kahoot quiz</p>
+				<div class="flex gap-4 mb-4 ml-4">
+					<p class="py-[8px] px-4 border border-[#C778DD] w-[112px] text-base text-white">Live <~></p>
+				</div>
+			</div>
+		</div>
+	</div>
 	</div>
 </section>
 
 <section id="footer">
 	<hr class="border border-[#ABB2BF] w-full mb-8">
 	<div class="contr">
-		<div class="flex justify-between mb-4">
+		<div class="flex lg:justify-between flex-col mb-4 lg:ml-0 ml-[-190px]">
 				<div class="flex items-center">
 					<img class="w-[24px] mr-[9px]" src="/assets/images/icons/Union.svg" alt="">
 					<p class="font-bold text-2xl text-white mr-8">tegarp00</p>
 					<a class="text-[#ABB2BF] font-normal text-base" href="#">tegarp00@gmail.com</a>
 				</div>
 				<div>
-					<p class="text-right font-medium text-2xl text-white mr-[26px]">Media</p>
+					<p class="text-right font-medium text-2xl text-white lg:mr-[12px] mr-[-158px]">Media</p>
 				</div>
 		</div>
-			<div class="flex items-start justify-between mb-12">
+			<div class="flex items-start justify-between mb-12 lg:ml-0 ml-[-190px]">
 				<div>
-					<p class="text-base text-white font-normal w-[476px]">Web designer and front-end developer based in Ukraine</p>
+					<p class="text-base text-white font-normal lg:w-[476px] w-[250px]">Web designer and front-end developer based in Ukraine</p>
 				</div>
-				<div class="flex gap-4">
+				<div class="flex gap-2 lg:ml-0 ml-[30px]">
 					<img class="w-[20px]" src="/assets/images/icons/github.svg" alt="">
 					<img class="w-[15px]" src="/assets/images/icons/figma.svg" alt="">
 					<img class="w-[32px]" src="/assets/images/icons/Discord.svg" alt="">
 				</div>
 			</div>
-			<p class="mb-8 text-center text-[#ABB2BF] text-base font-normal">&copy; Copyright 2022. tegarp00@farCapital</p>
+			<p class="lg:ml-0 ml-[-170px] mb-8 lg:text-center text-[#ABB2BF] lg:text-base text-[14px] lg:w-[900px] w-[330px]">&copy; Copyright 2022. tegarp00@farCapital</p>
 	</div>
 </section>
 
