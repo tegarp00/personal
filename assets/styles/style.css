@@ -6,15 +6,17 @@
 
 
 .contr {
-    padding-right: 179px;
-    padding-left: 179px;
-    margin-left: 35px;
+  @apply lg:ml-[35px] lg:px-[179px]
 }
 
 .kol-3 {
     width: calc(100% / 3);
 }
 
+/* width */
+::-webkit-scrollbar, ::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
+  @apply hidden;
+}
 /*
 nav ul li a {
     font-family: 'Fira Code';
