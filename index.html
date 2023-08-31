@@ -10,238 +10,239 @@
 	<title>MyLanding</title>
 </head>
 <body class="bg-[#282C33]">
+<!-- <body class="bg-[white]"> -->
 
-<section id="header">
-
-	<nav class="py-4 lg:px-2 px-4 bg-[#282C33] dark:bg-gray-900 dark:border-gray-700">
-
-		<div class="lg:px-[171px] lg:py-8 lg:mb-[62px] container flex flex-wrap items-center justify-between mx-auto">
-		<a href="#" class="flex items-center">
-			<img src="assets/images/icons/Union.svg" class="h-[16px] mr-3 sm:h-[16px]" alt="Flowbite Logo" />
-			<span class="self-center text-base text-white font-bold whitespace-nowrap dark:text-white">tegarp00</span>
-		</a>
-		<button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-orange-900 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
-			<svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-		</button>
-		<div class="lg:flex hidden w-full md:block md:w-auto" id="navbar-multi-level">
-			<div class="lg:mt-[-35px] lg:absolute lg:left-12 lg:top-0 lg:mb-[14px] h-0">
-				<img class="lg:mb-[14px] lg:visible invisible" src="assets/images/icons/Line 10 (Stroke).svg" alt="">
-				<div class="justify-center lg:mt-0 mt-[-40px] lg:ml-[-9px] flex lg:flex-col flex-row">
-					<img class="w-5 lg:mb-[19px]" src="assets/images/icons/github.svg" alt="">
-					<img class="w-5 lg:mb-[19px] lg:ml-0 ml-4" src="assets/images/icons/drible.svg" alt="">
-					<img class="w-[12px] lg:mb-[19px] lg:ml-0 ml-4" src="assets/images/icons/figma.svg" alt="">
-				</div>
-			</div>
-			<ul class="flex lg:ml-0 ml-5 p-4 mt-4 rounded-lg md:space-x-8 md:mt-0 md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-			<li class="lg:flex lg:flex-row flex-col lg:items-center">
-				<a href="#" class="lg:inline block tagar font-medium text-base  text-white rounded md:bg-transparent dark:bg-blue-600 md:dark:bg-transparent" aria-current="page"><span class="mr-[2px] text-[#C778DD]">#</span>home</a>
-				<a href="#" class="lg:inline block tagar font-medium text-base text-[#ABB2BF] rounded md:bg-transparent  dark:bg-blue-600 md:dark:bg-transparent" aria-current="page"><span class="mr-[2px] lg:ml-8 text-[#C778DD]">#</span>works</a>
-				<a href="#" class="lg:inline block tagar font-medium text-base text-[#ABB2BF] rounded md:bg-transparent dark:bg-blue-600 md:dark:bg-transparent" aria-current="page"><span class="mr-[2px] lg:ml-8 text-[#C778DD]">#</span>about-me</a>
-				<a href="#" class="lg:inline block tagar font-medium text-base text-[#ABB2BF] rounded md:bg-transparent dark:bg-blue-600 md:dark:bg-transparent" aria-current="page"><span class="mr-[2px] lg:ml-8 text-[#C778DD]">#</span>contacts</a>
-				<button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="lg:visible invisible ml-[32px] flex items-center w-full font-medium text-[#ABB2BF] border-b border-gray-100 hover:bg-[#C778DD] md:hover:bg-transparent md:border-0 md:hover:text-[#C778DD] md:p-0 md:w-auto">EN <svg class="w-4 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
-			</li>
-			<li>
-				<!-- Dropdown menu -->
-				<div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-					<ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-						<li>
-						<a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-						</li>
-						<li aria-labelledby="dropdownNavbarLink">
-						<button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dropdown<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></button>
-						<div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
-							<ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
-								<li>
-								<a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Overview</a>
-								</li>
-								<li>
-								<a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">My downloads</a>
-								</li>
-								<li>
-								<a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Billing</a>
-								</li>
-								<li>
-								<a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Rewards</a>
-								</li>
-							</ul>
-						</div>
-						</li>
-						<li>
-						<a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-						</li>
-					</ul>
-					<div class="py-1">
-						<a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
+<div class="lg:px-[171px]">
+	<section id="header">
+	
+		<nav class="py-4 lg:px-2 px-4 bg-[#282C33] dark:bg-gray-900 dark:border-gray-700">
+	
+			<div class="lg:py-8 lg:mb-[62px] container flex flex-wrap items-center justify-between mx-auto">
+			<a href="#" class="flex items-center">
+				<img src="assets/images/icons/Union.svg" class="h-[16px] mr-3 sm:h-[16px]" alt="Flowbite Logo" />
+				<span class="self-center text-base text-white font-bold whitespace-nowrap dark:text-white">tegarp00</span>
+			</a>
+			<button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-orange-900 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
+				<svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+			</button>
+			<div class="lg:flex hidden w-full md:block md:w-auto" id="navbar-multi-level">
+				<div class="lg:mt-[-35px] lg:absolute lg:left-12 lg:top-0 lg:mb-[14px] h-0">
+					<img class="lg:mb-[14px] lg:visible invisible" src="assets/images/icons/Line 10 (Stroke).svg" alt="">
+					<div class="justify-center lg:mt-0 mt-[-40px] lg:ml-[-9px] flex lg:flex-col flex-row">
+						<img class="w-5 lg:mb-[19px]" src="assets/images/icons/github.svg" alt="">
+						<img class="w-5 lg:mb-[19px] lg:ml-0 ml-4" src="assets/images/icons/drible.svg" alt="">
+						<img class="w-[12px] lg:mb-[19px] lg:ml-0 ml-4" src="assets/images/icons/figma.svg" alt="">
 					</div>
 				</div>
-			</li>
-			</ul>
-		</div>
-		</div>
-	</nav>
-
-</section>
-
-
-<section id="home" class="">
-	<div class="lg:pl-[179px] flex lg:flex-row flex-col lg:pt-0 pt-[15px]">
-		<div class="">
-			<h1 class="lg:mb-[32px] text-white font-semibold lg:ml-0 ml-[20px] lg:text-[32px] text-[18px] lg:w-[590px] w-[300px]">tegarp00 is a <span class="text-[#C778DD]">web designer</span> and <span class="text-[#C778DD]">backEnd developer</span></h1>
-			<p class="text-[#ABB2BF] lg:w-[462px] w-[350px] lg:ml-0 ml-[20px] mb-[32px]">
-				He crafts responsive website where technologies meet creativity
-			</p>
-			<a href="#" class="text-white border border-[#C778DD] py-2 px-4 lg:ml-0 ml-[20px]">Contact me !!</a>
-		</div>
-		<div class="lg:mt-0 mt-[90px] lg:px-0 px-4">
-			<img class="mt-[-62px]" src="assets/images/personal.png" alt="">
-			<div class="mb-[112px] flex items-center border border-[#ABB2BF] py-2 px-2 ml-[20px] w-[334px]">
-				<div class="w-4 h-4 mr-[10px] bg-[#C778DD]"></div>
-				<p class="text-[#ABB2BF] text-[13px] font-normal">Currently working on <span class="text-white font-semibold">Portofolio</span></p>
+				<ul class="flex lg:ml-0 ml-5 p-4 mt-4 rounded-lg md:space-x-8 md:mt-0 md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+				<li class="lg:flex lg:flex-row flex-col lg:items-center">
+					<a href="#" class="lg:inline block tagar font-medium text-base  text-white rounded md:bg-transparent dark:bg-blue-600 md:dark:bg-transparent" aria-current="page"><span class="mr-[2px] text-[#C778DD]">#</span>home</a>
+					<a href="#projects" class="lg:inline block tagar font-medium text-base text-[#ABB2BF] rounded md:bg-transparent  dark:bg-blue-600 md:dark:bg-transparent" aria-current="page"><span class="mr-[2px] lg:ml-8 text-[#C778DD]">#</span>works</a>
+					<a href="#" class="lg:inline block tagar font-medium text-base text-[#ABB2BF] rounded md:bg-transparent dark:bg-blue-600 md:dark:bg-transparent" aria-current="page"><span class="mr-[2px] lg:ml-8 text-[#C778DD]">#</span>about-me</a>
+					<a href="#" class="lg:inline block tagar font-medium text-base text-[#ABB2BF] rounded md:bg-transparent dark:bg-blue-600 md:dark:bg-transparent" aria-current="page"><span class="mr-[2px] lg:ml-8 text-[#C778DD]">#</span>contacts</a>
+					<button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="lg:visible invisible ml-[32px] flex items-center w-full font-medium text-[#ABB2BF] border-b border-gray-100 hover:bg-[#C778DD] md:hover:bg-transparent md:border-0 md:hover:text-[#C778DD] md:p-0 md:w-auto">EN <svg class="w-4 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+				</li>
+				<li>
+					<!-- Dropdown menu -->
+					<div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+						<ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+							<li>
+							<a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+							</li>
+							<li aria-labelledby="dropdownNavbarLink">
+							<button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center  w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><span class="mr-4"><</span>Dropdown</button>
+							<div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+								<ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+									<li>
+									<a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Overview</a>
+									</li>
+									<li>
+									<a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">My downloads</a>
+									</li>
+									<li>
+									<a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Billing</a>
+									</li>
+									<li>
+									<a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Rewards</a>
+									</li>
+								</ul>
+							</div>
+							</li>
+							<li>
+							<a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+							</li>
+						</ul>
+						<div class="py-1">
+							<a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
+						</div>
+					</div>
+				</li>
+				</ul>
 			</div>
-		</div>
-	</div>
-</section>
-
-<section id="quotes">
-	<div class="mx-auto relative flex justify-center  border border-[#ABB2BF] lg:w-[712px] w-[330px] py-8 px-8">
-		<img class="absolute top-[-12px] left-[8px] bg-[#282C33] px-2" src="/assets/images/petik-dua.png" alt="">
-		<p class="text-white text-center font-medium text-[18px]">With great power comes great electricity bill</p>
-	</div>
-	<div class="lg:ml-[852px] ml-[180px] mb-[74px] relative">
-		<div class="relative flex border border-t-0 border-[#ABB2BF] w-[180px] py-8 px-8">
-			<img class="absolute top-[-12px] right-[8px] bg-[#282C33] px-2" src="/assets/images/petik-dua.png" alt="">
-			<p class="text-white text-center font-medium text-[18px]">- Dr. Who</p>
-		</div>
-		<div class="absolute lg:left-[408px] left-[200px] top-[-65px] lg:w-[91px] w-[8px] h-[91px] bg-[#282C33] border border-r-0 border-[#ABB2BF] mr-[-350px]"></div>
-	</div>
-</section>
-
-
-<section id="projects" class="">
-	<div class="flex flex-col items-center lg:block contr left-0">
-
-	<div class="flex items-center mb-12">
-		 	<div class="flex items-center">
-			 <h1 class="text-white font-medium lg:text-[32px] text-[22px] mr-4 lg:ml-[-4px] ml-[18px]"><span class="text-[#C778DD]">#</span>projects</h1>
-			 <hr class="lg:visible invisible border border-[#C778DD] lg:w-[511px] w-0 lg:mr-[142px] mr-[30px]">
-			 <p class="font-medium text-base text-white w-[150px]">Value all ~~></p>
 			</div>
-	</div>
-	<div class="flex justify-start gap-4 mb-[131px] overflow-x-scroll lg:w-auto w-[300px]">
-		<div>
-			<img class="border border-[#ABB2BF]" src="assets/images/chartnodes.png" alt="">
-			<p class="py-2 pl-2 border border-t-0 border-b-0 w-[328px] text-[#ABB2BF] border-[#ABB2BF]"><span>HTML</span><span class="ml-2">SCSS</span><span class="ml-2">Python</span><span class="ml-2">Flask</span></p>
-			<div class="border border-[#ABB2BF] w-[328px]">
-
-				<p class="text-white text-2xl font-medium mt-[16px] ml-[16px] mb-4">ChertNodes</p>
-				<p class="ml-[16px] text-[#ABB2BF] text-base mb-4">Minecraft servers hosting </p>
-				<div class="flex gap-4 mb-4 ml-4">
-					<p class="py-[8px] px-4 border border-[#C778DD] w-[112px] text-base text-white">Live <~></p>
-					<p class="py-[8px] px-4 border border-[#ABB2BF] w-[142px] text-base text-[#ABB2BF]">Cached <~></p>
+		</nav>
+	
+	</section>
+	
+	<section id="home" class="container mx-auto">
+		<div class="lg:pl-[179px] flex lg:flex-row flex-col lg:pt-0 pt-[15px]">
+			<div class="">
+				<h1 class="lg:mb-[32px] text-white font-semibold lg:ml-0 ml-[20px] lg:text-[32px] text-[18px] lg:w-[590px] w-[300px]">tegarp00 is a <span class="text-[#C778DD]">web designer</span> and <span class="text-[#C778DD]">backEnd developer</span></h1>
+				<p class="text-[#ABB2BF] lg:w-[462px] w-[350px] lg:ml-0 ml-[20px] mb-[32px]">
+					He crafts responsive website where technologies meet creativity
+				</p>
+				<a href="#" class="text-white border border-[#C778DD] py-2 px-4 lg:ml-0 ml-[20px]">Contact me !!</a>
+			</div>
+			<div class="lg:mt-0 mt-[90px] lg:px-0 px-4">
+				<img class="mt-[-62px]" src="assets/images/personal.png" alt="">
+				<div class="mb-[112px] flex items-center border border-[#ABB2BF] py-2 px-2 ml-[20px] w-[334px]">
+					<div class="w-4 h-4 mr-[10px] bg-[#C778DD]"></div>
+					<p class="text-[#ABB2BF] text-[13px] font-normal">Currently working on <span class="text-white font-semibold">Portofolio</span></p>
 				</div>
 			</div>
 		</div>
-
-		<div class="">
-			<img class="border border-[#ABB2BF]" src="assets/images/protect.png" alt="">
-			<div class="border border-[#ABB2BF] border-t-0 border-b-0">
-				<p class="py-2 pl-2 w-[320px] text-[#ABB2BF]"><span>React</span><span class="ml-2">Express</span><span class="ml-2">Discord.js</span><span class="ml-2">Node.js</span></p>
-				<p class="pl-2 text-[#ABB2BF] text-base pb-2"><span>HTML</span><span class="ml-2">SCSS</span><span class="ml-2">Python</span><span class="ml-2">Flask</span></p>
+	</section>
+	
+	<section id="quotes" class="container mx-auto">
+		<div class="mx-auto relative flex justify-center  border border-[#ABB2BF] lg:w-[712px] w-[330px] py-8 px-8">
+			<img class="absolute top-[-12px] left-[8px] bg-[#282C33] px-2" src="/assets/images/petik-dua.png" alt="">
+			<p class="text-white text-center font-medium text-[18px]">With great power comes great electricity bill</p>
+		</div>
+		<div class="lg:ml-[852px] ml-[180px] mb-[74px] relative">
+			<div class="relative flex border border-t-0 border-[#ABB2BF] w-[180px] py-8 px-8">
+				<img class="absolute top-[-12px] right-[8px] bg-[#282C33] px-2" src="/assets/images/petik-dua.png" alt="">
+				<p class="text-white text-center font-medium text-[18px]">- Dr. Who</p>
 			</div>
-			<div class="border border-[#ABB2BF] w-[324px]">
-				<p class="text-white text-2xl font-medium mt-[16px] ml-[16px] mb-4">ProtectX</p>
-				<p class="ml-[16px] text-[#ABB2BF] text-base mb-4">Discord anti-crash bot</p>
-				<div class="flex gap-4 mb-4 ml-4">
-					<p class="py-[8px] px-4 border border-[#C778DD] w-[112px] text-base text-white">Live <~></p>
+			<div class="absolute lg:left-[408px] left-[200px] top-[-65px] lg:w-[91px] w-[8px] h-[91px] bg-[#282C33] border border-r-0 border-[#ABB2BF] mr-[-350px]"></div>
+		</div>
+	</section>
+	
+	<section id="projects" class="container mx-auto">
+		<div class="flex flex-col items-center lg:block contr left-0">
+	
+		<div class="flex items-center mb-12">
+				 <div class="flex items-center">
+				 <h1 class="text-white font-medium lg:text-[32px] text-[22px] mr-4 lg:ml-[-4px] ml-[18px]"><span class="text-[#C778DD]">#</span>projects</h1>
+				 <hr class="lg:visible invisible border border-[#C778DD] lg:w-[511px] w-0 lg:mr-[142px] mr-[30px]">
+				 <p class="font-medium text-base text-white w-[150px]">Value all ~~></p>
+				</div>
+		</div>
+		<div class="flex justify-start gap-4 mb-[131px] overflow-x-scroll lg:w-auto w-[300px]">
+			<div>
+				<img class="border border-[#ABB2BF]" src="assets/images/chartnodes.png" alt="">
+				<p class="py-2 pl-2 border border-t-0 border-b-0 w-[328px] text-[#ABB2BF] border-[#ABB2BF]"><span>HTML</span><span class="ml-2">SCSS</span><span class="ml-2">Python</span><span class="ml-2">Flask</span></p>
+				<div class="border border-[#ABB2BF] w-[328px]">
+	
+					<p class="text-white text-2xl font-medium mt-[16px] ml-[16px] mb-4">ChertNodes</p>
+					<p class="ml-[16px] text-[#ABB2BF] text-base mb-4">Minecraft servers hosting </p>
+					<div class="flex gap-4 mb-4 ml-4">
+						<p class="py-[8px] px-4 border border-[#C778DD] w-[112px] text-base text-white">Live <~></p>
+						<p class="py-[8px] px-4 border border-[#ABB2BF] w-[142px] text-base text-[#ABB2BF]">Cached <~></p>
+					</div>
+				</div>
+			</div>
+	
+			<div class="">
+				<img class="border border-[#ABB2BF]" src="assets/images/protect.png" alt="">
+				<div class="border border-[#ABB2BF] border-t-0 border-b-0">
+					<p class="py-2 pl-2 w-[320px] text-[#ABB2BF]"><span>React</span><span class="ml-2">Express</span><span class="ml-2">Discord.js</span><span class="ml-2">Node.js</span></p>
+					<p class="pl-2 text-[#ABB2BF] text-base pb-2"><span>HTML</span><span class="ml-2">SCSS</span><span class="ml-2">Python</span><span class="ml-2">Flask</span></p>
+				</div>
+				<div class="border border-[#ABB2BF] w-[324px]">
+					<p class="text-white text-2xl font-medium mt-[16px] ml-[16px] mb-4">ProtectX</p>
+					<p class="ml-[16px] text-[#ABB2BF] text-base mb-4">Discord anti-crash bot</p>
+					<div class="flex gap-4 mb-4 ml-4">
+						<p class="py-[8px] px-4 border border-[#C778DD] w-[112px] text-base text-white">Live <~></p>
+					</div>
+				</div>
+			</div>
+	
+			<div class="">
+				<img class="border border-[#ABB2BF]" src="assets/images/kahoot.png" alt="">
+				<p class="py-2 pl-2 border border-t-0 border-b-0 w-[323px] text-[#ABB2BF] border-[#ABB2BF]"><span>CSS</span><span class="ml-2">Express</span><span class="ml-2">Node.js</span>
+				<div class="border border-[#ABB2BF] w-[323px]">
+					<p class="text-white text-2xl font-medium mt-[16px] ml-[16px] mb-4">Kahoot Answers<br>Viewer</p>
+					<p class="ml-[16px] text-[#ABB2BF] text-base mb-4">Get answers to your kahoot quiz</p>
+					<div class="flex gap-4 mb-4 ml-4">
+						<p class="py-[8px] px-4 border border-[#C778DD] w-[112px] text-base text-white">Live <~></p>
+					</div>
+				</div>
+			</div>
+	
+			<div>
+				<img class="border border-[#ABB2BF]" src="assets/images/chartnodes.png" alt="">
+				<p class="py-2 pl-2 border border-t-0 border-b-0 w-[328px] text-[#ABB2BF] border-[#ABB2BF]"><span>HTML</span><span class="ml-2">SCSS</span><span class="ml-2">Python</span><span class="ml-2">Flask</span></p>
+				<div class="border border-[#ABB2BF] w-[328px]">
+	
+					<p class="text-white text-2xl font-medium mt-[16px] ml-[16px] mb-4">ChertNodes</p>
+					<p class="ml-[16px] text-[#ABB2BF] text-base mb-4">Minecraft servers hosting </p>
+					<div class="flex gap-4 mb-4 ml-4">
+						<p class="py-[8px] px-4 border border-[#C778DD] w-[112px] text-base text-white">Live <~></p>
+						<p class="py-[8px] px-4 border border-[#ABB2BF] w-[142px] text-base text-[#ABB2BF]">Cached <~></p>
+					</div>
+				</div>
+			</div>
+	
+			<div class="">
+				<img class="border border-[#ABB2BF]" src="assets/images/kahoot.png" alt="">
+				<p class="py-2 pl-2 border border-t-0 border-b-0 w-[323px] text-[#ABB2BF] border-[#ABB2BF]"><span>CSS</span><span class="ml-2">Express</span><span class="ml-2">Node.js</span>
+				<div class="border border-[#ABB2BF] w-[323px]">
+					<p class="text-white text-2xl font-medium mt-[16px] ml-[16px] mb-4">Kahoot Answers<br>Viewer</p>
+					<p class="ml-[16px] text-[#ABB2BF] text-base mb-4">Get answers to your kahoot quiz</p>
+					<div class="flex gap-4 mb-4 ml-4">
+						<p class="py-[8px] px-4 border border-[#C778DD] w-[112px] text-base text-white">Live <~></p>
+					</div>
+				</div>
+			</div>
+	
+	
+			<div class="">
+				<img class="border border-[#ABB2BF]" src="assets/images/protect.png" alt="">
+				<div class="border border-[#ABB2BF] border-t-0 border-b-0">
+					<p class="py-2 pl-2 w-[320px] text-[#ABB2BF]"><span>React</span><span class="ml-2">Express</span><span class="ml-2">Discord.js</span><span class="ml-2">Node.js</span></p>
+					<p class="pl-2 text-[#ABB2BF] text-base pb-2"><span>HTML</span><span class="ml-2">SCSS</span><span class="ml-2">Python</span><span class="ml-2">Flask</span></p>
+				</div>
+				<div class="border border-[#ABB2BF] w-[324px]">
+					<p class="text-white text-2xl font-medium mt-[16px] ml-[16px] mb-4">ProtectX</p>
+					<p class="ml-[16px] text-[#ABB2BF] text-base mb-4">Discord anti-crash bot</p>
+					<div class="flex gap-4 mb-4 ml-4">
+						<p class="py-[8px] px-4 border border-[#C778DD] w-[112px] text-base text-white">Live <~></p>
+					</div>
 				</div>
 			</div>
 		</div>
-
-		<div class="">
-			<img class="border border-[#ABB2BF]" src="assets/images/kahoot.png" alt="">
-			<p class="py-2 pl-2 border border-t-0 border-b-0 w-[323px] text-[#ABB2BF] border-[#ABB2BF]"><span>CSS</span><span class="ml-2">Express</span><span class="ml-2">Node.js</span>
-			<div class="border border-[#ABB2BF] w-[323px]">
-				<p class="text-white text-2xl font-medium mt-[16px] ml-[16px] mb-4">Kahoot Answers<br>Viewer</p>
-				<p class="ml-[16px] text-[#ABB2BF] text-base mb-4">Get answers to your kahoot quiz</p>
-				<div class="flex gap-4 mb-4 ml-4">
-					<p class="py-[8px] px-4 border border-[#C778DD] w-[112px] text-base text-white">Live <~></p>
-				</div>
-			</div>
 		</div>
-
-		<div>
-			<img class="border border-[#ABB2BF]" src="assets/images/chartnodes.png" alt="">
-			<p class="py-2 pl-2 border border-t-0 border-b-0 w-[328px] text-[#ABB2BF] border-[#ABB2BF]"><span>HTML</span><span class="ml-2">SCSS</span><span class="ml-2">Python</span><span class="ml-2">Flask</span></p>
-			<div class="border border-[#ABB2BF] w-[328px]">
-
-				<p class="text-white text-2xl font-medium mt-[16px] ml-[16px] mb-4">ChertNodes</p>
-				<p class="ml-[16px] text-[#ABB2BF] text-base mb-4">Minecraft servers hosting </p>
-				<div class="flex gap-4 mb-4 ml-4">
-					<p class="py-[8px] px-4 border border-[#C778DD] w-[112px] text-base text-white">Live <~></p>
-					<p class="py-[8px] px-4 border border-[#ABB2BF] w-[142px] text-base text-[#ABB2BF]">Cached <~></p>
-				</div>
+	</section>
+	
+	<section id="footer">
+		<hr class="border border-[#ABB2BF] w-full mb-8">
+		<div class="contr">
+			<div class="flex lg:justify-between flex-col mb-4 lg:ml-0 ml-[16px]">
+					<div class="flex items-center">
+						<img class="w-[24px] mr-[9px]" src="assets/images/icons/Union.svg" alt="">
+						<p class="font-bold text-2xl text-white mr-8">tegarp00</p>
+						<a class="text-[#ABB2BF] font-normal text-base" href="#">`Tidak bisa semua disamaratakan...`</a>
+					</div>
+					<div>
+						<p class="text-right font-medium text-2xl text-white lg:mr-[12px] mr-[12px]">Media</p>
+					</div>
 			</div>
+				<div class="flex items-start justify-between mb-12 lg:ml-0 ml-[20px]">
+					<div>
+						<p class="text-base text-white font-normal lg:w-[476px] w-[250px]">Full Stack Developer Based in Indonesia</p>
+					</div>
+			<div class="flex gap-2 lg:mr-0 mr-[8px]">
+						<img class="w-[20px]" src="assets/images/icons/github.svg" alt="">
+						<img class="w-[15px]" src="assets/images/icons/figma.svg" alt="">
+						<img class="w-[32px]" src="assets/images/icons/Discord.svg" alt="">
+					</div>
+				</div>
+				<p class="lg:ml-0 ml-[40px] mb-8 lg:text-center text-[#ABB2BF] lg:text-base text-[14px] lg:w-[900px] w-[330px]">&copy; Copyright 2022. tegarp00@gmail.com</p>
 		</div>
-
-		<div class="">
-			<img class="border border-[#ABB2BF]" src="assets/images/kahoot.png" alt="">
-			<p class="py-2 pl-2 border border-t-0 border-b-0 w-[323px] text-[#ABB2BF] border-[#ABB2BF]"><span>CSS</span><span class="ml-2">Express</span><span class="ml-2">Node.js</span>
-			<div class="border border-[#ABB2BF] w-[323px]">
-				<p class="text-white text-2xl font-medium mt-[16px] ml-[16px] mb-4">Kahoot Answers<br>Viewer</p>
-				<p class="ml-[16px] text-[#ABB2BF] text-base mb-4">Get answers to your kahoot quiz</p>
-				<div class="flex gap-4 mb-4 ml-4">
-					<p class="py-[8px] px-4 border border-[#C778DD] w-[112px] text-base text-white">Live <~></p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="">
-			<img class="border border-[#ABB2BF]" src="assets/images/protect.png" alt="">
-			<div class="border border-[#ABB2BF] border-t-0 border-b-0">
-				<p class="py-2 pl-2 w-[320px] text-[#ABB2BF]"><span>React</span><span class="ml-2">Express</span><span class="ml-2">Discord.js</span><span class="ml-2">Node.js</span></p>
-				<p class="pl-2 text-[#ABB2BF] text-base pb-2"><span>HTML</span><span class="ml-2">SCSS</span><span class="ml-2">Python</span><span class="ml-2">Flask</span></p>
-			</div>
-			<div class="border border-[#ABB2BF] w-[324px]">
-				<p class="text-white text-2xl font-medium mt-[16px] ml-[16px] mb-4">ProtectX</p>
-				<p class="ml-[16px] text-[#ABB2BF] text-base mb-4">Discord anti-crash bot</p>
-				<div class="flex gap-4 mb-4 ml-4">
-					<p class="py-[8px] px-4 border border-[#C778DD] w-[112px] text-base text-white">Live <~></p>
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
-</section>
-
-<section id="footer">
-	<hr class="border border-[#ABB2BF] w-full mb-8">
-	<div class="contr">
-		<div class="flex lg:justify-between flex-col mb-4 lg:ml-0 ml-[16px]">
-				<div class="flex items-center">
-					<img class="w-[24px] mr-[9px]" src="assets/images/icons/Union.svg" alt="">
-					<p class="font-bold text-2xl text-white mr-8">tegarp00</p>
-					<a class="text-[#ABB2BF] font-normal text-base" href="#">tegarp00@gmail.com</a>
-				</div>
-				<div>
-					<p class="text-right font-medium text-2xl text-white lg:mr-[12px] mr-[12px]">Media</p>
-				</div>
-		</div>
-			<div class="flex items-start justify-between mb-12 lg:ml-0 ml-[20px]">
-				<div>
-					<p class="text-base text-white font-normal lg:w-[476px] w-[250px]">Web designer and front-end developer based in Ukraine</p>
-				</div>
-        <div class="flex gap-2 lg:mr-0 mr-[8px]">
-					<img class="w-[20px]" src="assets/images/icons/github.svg" alt="">
-					<img class="w-[15px]" src="assets/images/icons/figma.svg" alt="">
-					<img class="w-[32px]" src="assets/images/icons/Discord.svg" alt="">
-				</div>
-			</div>
-			<p class="lg:ml-0 ml-[40px] mb-8 lg:text-center text-[#ABB2BF] lg:text-base text-[14px] lg:w-[900px] w-[330px]">&copy; Copyright 2022. tegarp00@farCapital</p>
-	</div>
-</section>
+	</section>
+</div>
 
 	<script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
-<!-- 	<script type="text/javascript" src="node_modules/flowbite/dist/flowbite.js"></script> -->
+	<!-- <script type="text/javascript" src="node_modules/flowbite/dist/flowbite.js"></script> -->
 </body>
 </html>
