@@ -48,3 +48,5 @@ nav {
     color: #C778DD;
 }
 */
+
+/* build tailwind npx tailwindcss build assets/styles/style.css -o assets/styles/tailwind.css */
