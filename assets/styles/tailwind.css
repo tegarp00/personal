@@ -1073,8 +1073,8 @@ input:checked + .toggle-bg{
   left: 8px;
 }
 
-.top-\[92px\]{
-  top: 92px;
+.top-\[120px\]{
+  top: 120px;
 }
 
 .right-0{
@@ -2863,6 +2863,11 @@ input:checked + .toggle-bg{
   font-size: 13px;
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-\[22px\]{
   font-size: 22px;
 }
@@ -3748,6 +3753,10 @@ nav {
     top: 0px;
   }
 
+  .lg\:top-\[92px\]{
+    top: 92px;
+  }
+
   .lg\:left-\[408px\]{
     left: 408px;
   }
@@ -3808,8 +3817,8 @@ nav {
     display: flex;
   }
 
-  .lg\:w-\[590px\]{
-    width: 590px;
+  .lg\:w-\[480px\]{
+    width: 480px;
   }
 
   .lg\:w-\[422px\]{
