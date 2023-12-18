@@ -1418,6 +1418,18 @@ input:checked + .toggle-bg{
   height: 91px;
 }
 
+.h-\[200px\]{
+  height: 200px;
+}
+
+.h-\[64px\]{
+  height: 64px;
+}
+
+.h-\[188px\]{
+  height: 188px;
+}
+
 .h-9{
   height: 2.25rem;
 }
